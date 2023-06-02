@@ -57,4 +57,20 @@ describe('template spec', () => {
     cy.get(':nth-child(1) > form > [type="submit"]').click();
     /* ==== End Cypress Studio ==== */
   });
+
+  /* ==== Test Created with Cypress Studio ==== */
+  it('CancelChangeNote', function() {
+    /* ==== Generated with Cypress Studio ==== */
+    cy.visit('http://localhost:5173/');
+    cy.get('#root > :nth-child(1)').click();
+    cy.get(':nth-child(1) > input').clear('te');
+    cy.get(':nth-child(1) > input').type('test');
+    cy.get(':nth-child(3) > input').click();
+    cy.get(':nth-child(3) > input').click();
+    cy.get('textarea').click();
+    cy.get('.createBtn').click();
+    cy.get('[style="background-color: red;"] > button').click();
+    cy.get(':nth-child(1) > form > :nth-child(6)').click();
+    /* ==== End Cypress Studio ==== */
+  });
 })
